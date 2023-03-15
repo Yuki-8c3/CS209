@@ -33,5 +33,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Maven: org.openjdk.jmh:jmh-core:1.35" level="project" />
   </component>
 </module>
