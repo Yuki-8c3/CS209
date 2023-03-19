@@ -18,7 +18,6 @@ public class FileTypeParser {
     System.out.println("Filename:"+ str);
 //    System.out.println("Filename:1");
     checkType(file);
-
   }
 
   public static void checkType(File filename) throws IOException {
