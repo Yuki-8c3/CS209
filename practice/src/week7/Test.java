@@ -17,6 +17,19 @@ public class Test {
 
         while(!service.isTerminated()) {}
 
-        System.out.println("Balance: " + account.getBalance());
+        System.out.println("Synchronized Balance: " + account.getBalance());
+
+
+        ExecutorService lock = Executors.newFixedThreadPool(100);
+        Account accountLock = new Account();
+        for(int i = 1; i <= 100; i++) {
+            lock.execute(new DepositThreadLock(accountLock, 10));
+        }
+
+        lock.shutdown();
+
+        while(!lock.isTerminated()) {}
+
+        System.out.println("Locked Balance: " + account.getBalance());
     }
 }

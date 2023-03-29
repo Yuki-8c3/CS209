@@ -13,5 +13,6 @@ public class DepositThread implements Runnable {
 	@Override
 	public void run() {
 			account.deposit(money);
+//		account.lockedDeposit(money);
 		}
 }
