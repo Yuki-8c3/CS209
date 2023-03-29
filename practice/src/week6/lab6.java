@@ -14,13 +14,12 @@ public class lab6 {
 
   public static void main(String[] args) {
     try{
-//      readZipFile("F:\\2023Spring\\CS209_main\\practice\\src\\week6\\src.zip");
-      readJarFile("F:\\2023Spring\\CS209_main\\practice\\src\\week6\\rt.jar");
+      readZipFile("F:\\2023Spring\\CS209_main\\practice\\src\\week6\\src.zip");
+//      readJarFile("F:\\2023Spring\\CS209_main\\practice\\src\\week6\\rt.jar");
     }
     catch (Exception e) {
       e.printStackTrace();
     }
-
   }
 
   public static void readZipFile(String zipFile) throws Exception{
